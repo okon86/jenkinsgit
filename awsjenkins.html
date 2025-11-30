@@ -1,0 +1,13 @@
+Your and Ec2 machine with the most secure way with vpc,subnet,igw, and NAT.
+Connect to your machine.
+Then you have to update packages "sudo yum update"
+Check if java is install if not java java --version, the command "sudo yum install java-1.80
+" sudo /usr/sbin/alternatives --config java
+Download latest jenkins code package "sudo wget -O/etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci/redhat/jenkins.repo"
+then you have to check the key "sudo rpm --import http://okg.jenkins-ci org/redhat/jenkins-ci org key"
+install jenkins with the command "sudo yum install jenkins"
+start jenkins with the command "sudo service jenkin start"
+Access the jenkins with your IP and 8080
+password Adm with the commands "sudo su"  "cd/var/lib/jenkins/secrets" "cat/initailadminispassword"
+stop jenkin "sudo service jenkins stop"
+uninstall jenkins "sudo service jenkins stop"
